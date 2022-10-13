@@ -7,12 +7,17 @@
     <title>Univercity Website</title>
     <link rel="shortcut icon" href="img/download.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome 4 cnd -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css;"> -->
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/3acf3cc1b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="img/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id ="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -21,7 +26,33 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest Univercity</h1>
+            <p>World University of Bangladesh provides quality education in Bangladesh to Undergraduate,<br> Post-graduate and Research students.!</p>
+            <a href="https://unsplash.com/" target="_blank" class="hero-btn">Visit Us to know more</a>
+        </div>
     </section>
+    <!-- courses section -->
+    <section class="course">
+        <h1>Courses We Offers</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, modi!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Secondary</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quia aliquid facilis dolorem officiis quisquam iste in. Lorem ipsum dolor sit. Modi, aliquid dolore!</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, accusantium, vel maxime hic, ratione est enim voluptate necessitatibus repellendus fugit!</p>
+            </div>
+            <div class="course-col">
+                <h3>Diploma in Engineering</h3>
+                <p>Lorem ipsum  amet consectetur adipisicing elit. Sapiente corporis suscipit modi error rem iste dolore in rerum, distinctio assumenda deleniti ut suscipit, nobis quae odit?</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
