@@ -195,8 +195,39 @@ nav img{
     bottom: 49%;
     opacity: 1;
 }
-
-
+/* =============Facilities============ */
+.facilities{
+    width:80%;
+    padding-top: 100px;
+    margin:auto;
+    text-align: center;
+}
+.facilities h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.facilities p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.facilities-col{
+    margin-bottom: 5%;
+}
+.facilities-col p{
+    text-align: left;
+}
+.facilities img{
+    width:100%;
+    border-radius: 10px;
+}
+.facilities h3{
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: left;
+}
 nav .fa{
     display: none;
 }
@@ -235,8 +266,8 @@ nav .fa{
         font-size: 22px;
         cursor: pointer;
     }
-    .course, .campus{
-        width:90%;
+    .course, .campus, .facilities{
+        width:85%;
     }
     .row{
         display: grid;
