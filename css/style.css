@@ -120,7 +120,7 @@ nav img{
     background-color: #fff3f3;
     border-radius: 10px;
     padding: 20px 12px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     transition: .5s;
 }
 .course-col h3{
@@ -130,6 +130,70 @@ nav img{
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* =======cumpus section======== */
+.campus{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+    text-align: center;
+}
+.campus h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.campus p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    
+}
+.campus-col{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    transition: 1s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.543);
+}
+.layer h3{
+    width: 100%;
+    font-size: 26px;
+    font-weight: 600;
+    color:#fff;
+    text-transform: uppercase;
+    position:absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
 
 
@@ -171,6 +235,9 @@ nav .fa{
         font-size: 22px;
         cursor: pointer;
     }
+    .course, .campus{
+        width:90%;
+    }
     .row{
         display: grid;
         grid-template-columns: 1fr;
@@ -178,5 +245,16 @@ nav .fa{
     .course-col{
         margin-bottom: 0%;
     }
+    .campus-col{
+        margin-bottom: 0;;
+    }
+    
 
 }
+@media screen and (min-width:689px) and (max-width:992px) {
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
